@@ -1,0 +1,6 @@
+{
+  "name": "WebP 1612x801 无损图片转换器",
+  "description": "一键将图片转换为 WebP 格式并无损缩放重采样至 1612x801 像素，支持智能居中裁剪、等比留白、精确拉伸与交互取景，本地极速处理保护隐私。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
