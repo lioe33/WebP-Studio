@@ -57,11 +57,26 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
           <div className="space-y-1.5">
             <h4 className="font-semibold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              3. 纯本地沙盒与隐私安全
+              3. 数据存储机制（零云端存储 · 100% 本地内存）
             </h4>
             <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed pl-6">
-              本工具所有重采样缩放与 WebP 编码计算均通过浏览器原生 HTML5 Canvas 2D 及 GPU 硬件加速在您本地设备端完成。您的私密图片与照片绝不会上传至任何远程服务器。
+              数据仅存储在您当前浏览器的<strong>本地运行时内存（RAM / Blob URL）</strong>中，没有任何图片或数据被上传到后端服务器或云端数据库。关闭或刷新页面后，内存自动释放回收，绝对保障商业图纸或私人照片隐私。
             </p>
+          </div>
+
+          <div className="space-y-1.5">
+            <h4 className="font-semibold text-neutral-900 dark:text-neutral-100 flex items-center gap-2">
+              <Zap className="w-4 h-4 text-emerald-600" />
+              4. 部署至 Cloudflare Pages 指南
+            </h4>
+            <div className="text-neutral-500 dark:text-neutral-400 leading-relaxed pl-6 space-y-1">
+              <p>本项目为 100% 纯静态单页架构（Vite + React SPA），完美原生支持 Cloudflare Pages：</p>
+              <div className="bg-neutral-100 dark:bg-slate-800 p-2.5 rounded-lg font-mono text-[11px] text-neutral-800 dark:text-neutral-200 space-y-0.5">
+                <div>• 构建命令 (Build Command): <span className="text-emerald-600 dark:text-emerald-400 font-bold">npm run build</span></div>
+                <div>• 输出目录 (Build Output Directory): <span className="text-emerald-600 dark:text-emerald-400 font-bold">dist</span></div>
+                <div>• 框架预设 (Framework preset): <span className="text-emerald-600 dark:text-emerald-400 font-bold">Vite</span></div>
+              </div>
+            </div>
           </div>
         </div>
 
